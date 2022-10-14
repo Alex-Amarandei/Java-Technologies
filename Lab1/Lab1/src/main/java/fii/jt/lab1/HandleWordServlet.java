@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.List;
 import java.util.Set;
 
@@ -107,20 +108,86 @@ public class HandleWordServlet extends HttpServlet {
      * @param response The HTML page returned as a response to the request.
      */
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
+        logRequestInfo(request);
+        if (request.getHeader("Accept").contains("text/html")) {
+            response.setContentType("text/html");
+            PrintWriter out = response.getWriter();
+            out.println("<html><body>");
 
-        out.println("<h2> Word: ");
-        out.println(request.getParameter("word"));
-        out.println("| Size: ");
-        out.println(request.getParameter("size"));
-        out.println("</h2>");
+            out.println("<h2> Word: ");
+            out.println(request.getParameter("word"));
+            out.println("| Size: ");
+            out.println(request.getParameter("size"));
+            out.println("</h2>");
 
-        solveTask1(request, out);
-        solveTask2(request, out);
+            solveTask1(request, out);
+            solveTask2(request, out);
 
-        out.println("<br><hr><h1>See? Just as promised.</h1></body></html>");
+            out.println("<br><hr><h1>See? Just as promised.</h1></body></html>");
+        } else {
+            response.setContentType("text/plain");
+
+            solveTasksForApp(request);
+        }
+    }
+
+    /**
+     * Bulk solves the tasks and returns the answers as a string instead of a HTML page.
+     *
+     * @param request The request made.
+     */
+    private void solveTasksForApp(HttpServletRequest request) {
+        String word = request.getParameter("word");
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) != ' ') {
+                sb.append(word.charAt(i)).append("\n");
+            }
+        }
+
+        Integer size = validateSizeGivenWord(tryParseInt(request.getParameter("size")), word);
+        List<String> subWords = new ArrayList<>();
+
+        if (size == 0) {
+            for (int j = 1; j <= word.length(); j++) {
+                transferSubWordsOfGivenSize(0, j, "", word, subWords);
+            }
+        } else {
+            transferSubWordsOfGivenSize(0, size, "", word, subWords);
+        }
+
+        Set<String> words = filterWordsUsingDictionary(subWords, this.dictionary);
+
+        for (String s : words) {
+            sb.append(s).append(" ");
+        }
+
+        System.out.println(sb);
+    }
+
+    /**
+     * Logger for the request info.
+     *
+     * @param request The request about which we want to extract the info.
+     */
+    private void logRequestInfo(HttpServletRequest request) {
+        System.out.println(request.getMethod());
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("Request Method: ").append(request.getMethod()).append("\n");
+        sb.append("Origin IP: ").append(request.getRemoteAddr()).append("\n");
+        sb.append("User Agent: ").append(request.getHeader("User-Agent")).append("\n");
+        sb.append("Request Language: ").append(request.getHeader("Accept-Language")).append("\n");
+
+        Enumeration<String> parameters = request.getParameterNames();
+
+        while (parameters.hasMoreElements()) {
+            String currentParameter = parameters.nextElement();
+            sb.append(currentParameter).append(": ").append(request.getParameter(currentParameter)).append("\n");
+        }
+
+        getServletContext().log(sb.toString());
     }
 
     /**

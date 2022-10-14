@@ -34,6 +34,14 @@
 
 - The validated words in the set are then outputted one after the other.
 
+## Bonus
+
+**Task:** _Invoke the service from a desktop application (Java, Python, .NET, etc.). In this case, the servlet must respond with a simple text containing the list of words, instead of an HTML page._
+
+- _Modify the servlet so it logs all the requests and results. Write in the server log the following information about each request: the HTTP method used, the IP-address of the client, the user-agent, the client language(s) and the parameters of the request._
+
+**Solution:** Self-Explanatory, app was built using Python 3.10.
+
 <br>
 
 ## Notable Contributions
