@@ -15,6 +15,12 @@ import java.io.IOException;
  */
 @WebServlet(name = "landing", value = "/")
 public class LandingServlet extends HttpServlet {
+    /**
+     * Handles the GET request by forwarding all requests to input.jsp.
+     *
+     * @param request  The HTTP POST request.
+     * @param response The HTML page returned as a response to the request.
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("input.jsp").forward(request, response);

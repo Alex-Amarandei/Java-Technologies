@@ -52,6 +52,13 @@
         width: 50%;
         margin: auto;
     }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 </style>
 
 <head>
@@ -75,6 +82,12 @@
             <option value="task1"> Task 1: Convert to list of characters.</option>
             <option value="task2"> Task 2: Generate valid anagrams from character subsets.</option>
         </select>
+
+        <label for="captchaCode">Captcha</label>
+        <input type="text" id="captchaCode" name="captchaCode" placeholder="Write the contents of the captcha.">
+        <img src="captcha" alt="captcha" class="center">
+        <br>
+        <p style="color: red"> ${error} </p>
 
         <input type="submit" value="Submit">
     </form>

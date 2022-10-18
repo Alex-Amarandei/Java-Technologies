@@ -56,7 +56,6 @@
 
 <head>
     <title>Java Technologies - Lab 2</title>
-    <link href="css/inputStyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <a href="${pageContext.request.contextPath}/">Go Back</a>

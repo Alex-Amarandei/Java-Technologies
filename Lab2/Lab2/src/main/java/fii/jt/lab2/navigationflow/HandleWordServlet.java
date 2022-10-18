@@ -1,11 +1,10 @@
 package fii.jt.lab2.navigationflow;
 
+import fii.jt.lab2.listeners.CategoryWebListener;
 import fii.jt.lab2.model.DictionaryPair;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -90,8 +89,22 @@ public class HandleWordServlet extends HttpServlet {
      * @param response The HTML page returned as a response to the request.
      */
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        HttpSession session = request.getSession();
+        String code = (String) session.getAttribute("captchaSecurity");
+
+        if (!request.getParameter("captchaCode").equals(code)) {
+            request.setAttribute("error", "Invalid Captcha!");
+            request.getRequestDispatcher("input.jsp").forward(request, response);
+        }
+
         response.setContentType("text/html");
         String selectedTask = request.getParameter("task");
+        CategoryWebListener.category = request.getParameter("task");
+
+        if (CategoryWebListener.category.equals(""))
+            CategoryWebListener.category = getServletContext().getInitParameter("category");
+
+        Cookie cookie = new Cookie("category", request.getParameter("task"));
 
         request.setAttribute("word", request.getParameter("word"));
         request.setAttribute("size", request.getParameter("size"));
@@ -104,6 +117,7 @@ public class HandleWordServlet extends HttpServlet {
             solveTask2(request);
         }
 
+        response.addCookie(cookie);
         request.getRequestDispatcher("result.jsp").forward(request, response);
     }
 

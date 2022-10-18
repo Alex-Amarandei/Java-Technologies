@@ -4,8 +4,9 @@
 
 1. [Compulsory](#compulsory)
 2. [Homework](#homework)
-3. [Screenshots](#screenshots)
-4. [Notable Contributions](#notable-contributions)
+3. [Bonus](#bonus)
+4. [Screenshots](#screenshots)
+5. [Notable Contributions](#notable-contributions)
 
 ## Compulsory
 
@@ -59,6 +60,26 @@
 
 <br>
 
+## Bonus
+
+**Task:**
+
+- _Create a web listener that reads a default category specified as a context init parameter at the application start-up. This default value should be stored in an attribute having application scope and it will be used whenever the request does not contain a category._
+
+- _Use a "hand-made" cookie to store the category selected by the client. When the user returns to the site (after the current session was invalidated) and presents this cookie, the category will be set automatically._
+
+- _Add an original CAPTCHA facility to the input form._
+
+**Solution:**
+
+- **Web Listener:** Created the `CategoryWebListener` listener that does exactly what it is supposed to do.
+
+- **Cookie:** The cookie saves the previously selected task type, which also represents the above-mentioned category.
+
+- **Captcha**: The Captcha has randomly generated letters of different fonts, positions and colors. If the user wrongly guesses the Captcha content, an error message will appear. As seen in the last screenshot.
+
+<br>
+
 ## Screenshots
 
 ![Landing Page](screenshots/EmptyLanding.png "Landing Page")
@@ -67,6 +88,7 @@
 
 ![Task2 Landing](screenshots/Task2Landing.png "Task 2 Input")
 ![Task2 Result](screenshots/Task2Result.png "Task 2 Result")
+![Invalid Captcha](screenshots/Captcha.png)
 
 <br>
 
