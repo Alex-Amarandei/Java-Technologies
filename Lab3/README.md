@@ -4,7 +4,8 @@
 
 1. [Compulsory](#compulsory)
 2. [Homework](#homework)
-3. [Notable Contributions](#notable-contributions)
+3. [Bonus](#bonus)
+4. [Notable Contributions](#notable-contributions)
 
 ## Compulsory
 
@@ -31,6 +32,21 @@
 **Solution:**
 
 - Task was completed successfully using the [PrimeFaces Framework](https://www.primefaces.org/)
+
+<br>
+
+## Bonus
+
+**Task:**
+
+- _Create an algorithm for solving the problem._
+- _Create a page for displaying the results._
+- _Create a random generator that produces problem instances of various sizes and test your algorithm_
+
+**Solution:**
+
+- The task was completed using backtracking.
+- The task was completed accordingly.
 
 <br>
 

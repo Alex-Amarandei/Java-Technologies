@@ -25,4 +25,9 @@ A repository containing all the laboratories done over the course of the Java Te
 
 - [Compulsory](https://github.com/Alex-Amarandei/Java-Technologies/tree/main/Lab3#compulsory)
 - [Homework](https://github.com/Alex-Amarandei/Java-Technologies/tree/main/Lab3#homework)
+- [Bonus](https://github.com/Alex-Amarandei/Java-Technologies/tree/main/Lab3#bonus)
 - [Notable Contributions](https://github.com/Alex-Amarandei/Java-Technologies/tree/main/Lab3#notable-contributions)
+
+### [Lab 4 Items](https://github.com/Alex-Amarandei/Java-Technologies/tree/main/Lab4)
+
+- [Compulsory](https://github.com/Alex-Amarandei/Java-Technologies/tree/main/Lab4#compulsory)
