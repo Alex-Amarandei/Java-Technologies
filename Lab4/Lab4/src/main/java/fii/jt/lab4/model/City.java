@@ -9,7 +9,8 @@ public class City {
 
     /**
      * Constructor for the City class.
-     * @param id The unique id
+     *
+     * @param id   The unique id
      * @param name The city's name
      */
     public City(Long id, String name) {
@@ -19,6 +20,7 @@ public class City {
 
     /**
      * The only relevant information about the city, when converting to string, is its name.
+     *
      * @return the city's name
      */
     @Override
@@ -28,6 +30,7 @@ public class City {
 
     /**
      * Getter for the city's id.
+     *
      * @return the city's id
      */
     public Long getId() {
@@ -36,6 +39,7 @@ public class City {
 
     /**
      * Getter for the city's name.
+     *
      * @return the city's name
      */
     public String getName() {
@@ -44,6 +48,7 @@ public class City {
 
     /**
      * Setter for the city's name.
+     *
      * @param name the city's desired name
      */
     public void setName(String name) {

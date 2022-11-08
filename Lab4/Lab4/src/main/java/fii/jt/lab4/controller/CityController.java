@@ -21,6 +21,7 @@ public class CityController implements Serializable {
 
     /**
      * Getter for all the available cities list.
+     *
      * @return the existing cities
      */
     public List<City> getCities() {
@@ -29,6 +30,7 @@ public class CityController implements Serializable {
 
     /**
      * Getter for City
+     *
      * @return The currently selected city's name
      */
     public String getCity() {
@@ -37,6 +39,7 @@ public class CityController implements Serializable {
 
     /**
      * Setter for City
+     *
      * @param city City to select
      */
     public void setCity(String city) {

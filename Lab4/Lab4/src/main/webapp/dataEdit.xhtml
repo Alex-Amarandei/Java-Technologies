@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<style type="text/css">
+    body {
+        background: #acb6e5; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #86fde8, #acb6e5); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-family: "Avenir Next", sans-serif;
+    }
+</style>
+
+<h:head>
+    <div id="header">
+        <ui:include src="header.xhtml">
+        </ui:include>
+    </div>
+</h:head>
+
+<h:body>
+    <p:commandButton style="background-color:#acb6e5; width: 200px" value="Add" type="button"  onclick="PF('dlg3').show()"/>
+    <h:form>
+        <div class="card">
+            <p:dataTable var="team" value="#{TeamController.teams}">
+
+                <p:column headerText="Name">
+                    <h:outputText value="#{team.name}" />
+                </p:column>
+
+                <p:column headerText="Date">
+                    <h:outputText value="#{team.foundingDate}" />
+                </p:column>
+
+                <p:column headerText="CityId">
+                    <h:outputText value="#{team.cityId}" />
+                </p:column>
+            </p:dataTable>
+        </div>
+    </h:form>
+    <p:dialog header="Create a New Team" widgetVar="dlg3" minHeight="80" width="800" showEffect="fade">
+        <div class="card">
+            <h:form>
+                <p:panel>
+                    <h:panelGrid columns="4" cellpadding="5" styleClass="mb-3">
+                        <h:outputLabel for="txt1" value="Team Name:"/>
+                        <p:inputText id="txt1" value="#{TeamController.selectedTeamName}" required="true" label="Text 1">
+                            <f:validateLength minimum="2"/>
+                        </p:inputText>
+
+                        <h:outputLabel for="txt2" value="Founding Date:"/>
+                        <p:inputText type="date" id="txt2" value="#{TeamController.selectedTeamFoundingDate}" required="true"  pattern="dd-MMM-yyyy"/>
+
+                        <p:outputLabel for="@next" value="City Name:"/>
+                        <p:selectOneMenu id="option"  value="#{TeamController.selectedTeamCityId}">
+                            <f:selectItem itemLabel="Select One" itemValue=""/>
+                            <f:selectItems value="#{CityController.cities}" var="item" itemValue="#{item.id}" itemLabel="#{item.name}"/>
+                        </p:selectOneMenu>
+                    </h:panelGrid>
+
+                    <p:commandButton style="background-color:#acb6e5; width: 200px" update="@(form)" value="Add Team" styleClass="mr-2" action="#{TeamController.addTeam}"/>
+                </p:panel>
+            </h:form>
+        </div>
+    </p:dialog>
+</h:body>
+<div id="footer">
+        <ui:include src="footer.xhtml">
+        </ui:include>
+</div>
+</html>

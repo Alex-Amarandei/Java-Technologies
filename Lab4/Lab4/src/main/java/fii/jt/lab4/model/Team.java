@@ -5,16 +5,17 @@ package fii.jt.lab4.model;
  */
 public class Team {
     private final Long id;
+    private final Long cityId;
     private String name;
     private String foundingDate;
-    private final Long cityId;
 
     /**
      * Constructor for the Team class.
-     * @param id The unique id of the team
-     * @param name The name of the team
+     *
+     * @param id           The unique id of the team
+     * @param name         The name of the team
      * @param foundingDate The date the team was founded on
-     * @param cityId The id of the city the team belongs to
+     * @param cityId       The id of the city the team belongs to
      */
     public Team(Long id, String name, String foundingDate, Long cityId) {
         this.id = id;
@@ -25,6 +26,7 @@ public class Team {
 
     /**
      * Getter for the team's id.
+     *
      * @return the team's id
      */
     public Long getId() {
@@ -33,6 +35,7 @@ public class Team {
 
     /**
      * Getter for the team's name.
+     *
      * @return the team's name
      */
     public String getName() {
@@ -41,6 +44,7 @@ public class Team {
 
     /**
      * Setter for the team's name.
+     *
      * @param name the team's desired name
      */
     public void setName(String name) {
@@ -49,6 +53,7 @@ public class Team {
 
     /**
      * Getter for the team's founding date.
+     *
      * @return the team's founding date
      */
     public String getFoundingDate() {
@@ -57,6 +62,7 @@ public class Team {
 
     /**
      * Setter for the team's founding date.
+     *
      * @param foundingDate the team's founding date
      */
     public void setFoundingDate(String foundingDate) {
@@ -65,6 +71,7 @@ public class Team {
 
     /**
      * Getter for the city id foreign key.
+     *
      * @return the id of the city the team belongs to
      */
     public Long getCityId() {
@@ -73,6 +80,7 @@ public class Team {
 
     /**
      * Creates a nice way of visualising info about the team
+     *
      * @return a string containing all the information available about the team
      */
     @Override

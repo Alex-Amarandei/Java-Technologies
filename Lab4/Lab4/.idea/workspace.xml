@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Lab4:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="afe7916b-6d31-4965-a417-dafb217f3c96" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/controller/FlowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/model/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/model/Tournament.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/service/MatchMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dataEdit.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dataView.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/footer.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/header.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/menu.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/composites/redirectComposite.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/tournament.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Lab3_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Lab3_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Lab4_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Lab4_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/controller/CityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/controller/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/model/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/model/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/repository/SportsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/repository/SportsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+    </list>
+    <list id="a70f984e-33ca-40b7-ac6e-33fc0314d2a2" name="Changes by Andrei" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/controller/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/repository/SportsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/repository/SportsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fii/jt/lab4/service/SportsService.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="cdi.beans_2_0" />
+        <option value="jsf" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/fii/jt/lab4/controller/TeamController.java">
+      <ranges>
+        <range start1="3" end1="3" start2="3" end2="4" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="4" end1="4" start2="5" end2="6" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="8" end1="8" start2="10" end2="12" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="18" end1="18" start2="22" end2="26" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="19" end1="19" start2="27" end2="28" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="22" end1="22" start2="31" end2="32" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="28" end1="28" start2="38" end2="57" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="33" end1="34" start2="62" end2="63" changelist="a70f984e-33ca-40b7-ac6e-33fc0314d2a2" />
+        <range start1="40" end1="40" start2="69" end2="143" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/fii/jt/lab4/repository/SportsDB.java">
+      <ranges>
+        <range start1="5" end1="6" start2="5" end2="5" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="7" end1="8" start2="6" end2="6" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="24" end1="25" start2="22" end2="22" changelist="a70f984e-33ca-40b7-ac6e-33fc0314d2a2" />
+        <range start1="28" end1="30" start2="25" end2="28" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="31" end1="33" start2="29" end2="31" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="34" end1="35" start2="32" end2="33" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="38" end1="39" start2="36" end2="36" changelist="a70f984e-33ca-40b7-ac6e-33fc0314d2a2" />
+        <range start1="48" end1="49" start2="45" end2="46" changelist="a70f984e-33ca-40b7-ac6e-33fc0314d2a2" />
+        <range start1="52" end1="54" start2="49" end2="52" changelist="a70f984e-33ca-40b7-ac6e-33fc0314d2a2" />
+        <range start1="65" end1="65" start2="63" end2="64" changelist="a70f984e-33ca-40b7-ac6e-33fc0314d2a2" />
+        <range start1="86" end1="87" start2="85" end2="85" changelist="a70f984e-33ca-40b7-ac6e-33fc0314d2a2" />
+        <range start1="93" end1="95" start2="91" end2="92" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+        <range start1="96" end1="97" start2="93" end2="93" changelist="afe7916b-6d31-4965-a417-dafb217f3c96" />
+      </ranges>
+    </file>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HGCXDGncXe5Ws5dyilPA2zBbnK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "/Users/alex-ama/Files/GitHub/Java-Technologies/Lab4/Lab4/src/main/webapp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/java/fii/jt/lab4" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GlassFish 5.2022.3" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.2022.3" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Lab4-1.0-SNAPSHOT" />
+      <deployment>
+        <artifact name="Lab4:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Lab4:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="afe7916b-6d31-4965-a417-dafb217f3c96" name="Changes" comment="" />
+      <created>1667902071505</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667902071505</updated>
+      <workItem from="1667902074719" duration="10873000" />
+      <workItem from="1667923940621" duration="3836000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

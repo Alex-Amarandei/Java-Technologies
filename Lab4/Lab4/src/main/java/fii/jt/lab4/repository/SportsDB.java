@@ -3,9 +3,7 @@ package fii.jt.lab4.repository;
 import fii.jt.lab4.model.City;
 import fii.jt.lab4.model.Team;
 
-import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,21 +20,20 @@ public class SportsDB {
     public SportsDB() {
         getConnection();
     }
-
     /**
      * Creates the connection between the app and the Postgresql database
      */
-    public void getConnection()  {
-        InitialContext ctx = null;
+    private void getConnection() {
+        this.connection = null;
+        javax.naming.InitialContext ctx = null;
         try {
-            ctx = new InitialContext();
-            DataSource ds = (DataSource)ctx.lookup("jdbc/Lab4");
+            ctx = new javax.naming.InitialContext();
+            javax.sql.DataSource ds = (javax.sql.DataSource)ctx.lookup("jdbc/lab4");
             this.connection = ds.getConnection();
-        } catch (NamingException | SQLException e) {
+        } catch (SQLException | NamingException e) {
             e.printStackTrace();
         }
     }
-
     /**
      * Function used for creating and storing a new team in the database
      * @param teamName The team's name
@@ -46,12 +43,13 @@ public class SportsDB {
      */
     public void storeTeam(String teamName, String foundingDate, int cityId) throws SQLException {
 
-        String insertTeam = "insert into teams (name, date, city_id) values (?,?,?)";
+        String insertTeam = "insert into teams (name, city_id, founding_date) values (?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(insertTeam);
 
         preparedStatement.setString(1, teamName);
-        preparedStatement.setString(2, foundingDate);
-        preparedStatement.setInt(3, cityId);
+        preparedStatement.setInt(2, cityId);
+        preparedStatement.setString(3, foundingDate);
+
 
         preparedStatement.executeUpdate();
     }
@@ -63,6 +61,7 @@ public class SportsDB {
      */
     public List<City> retrieveCities() throws SQLException {
         String retrieveTeam = "SELECT * from cities";
+
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(retrieveTeam);
         List<City> cities = new ArrayList<>();
@@ -84,17 +83,14 @@ public class SportsDB {
     public List<Team> retrieveTeams() throws SQLException {
 
         String retrieveTeam = "SELECT * from teams";
-
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(retrieveTeam);
 
         List<Team> teams = new ArrayList<>();
 
         while (resultSet.next()) {
-
-            Team team = new Team(resultSet.getLong("id"), resultSet.getString("name"), resultSet.getString("date"), resultSet.getLong("city_id"));
+            Team team = new Team(resultSet.getLong("id"), resultSet.getString("name"), resultSet.getString("founding_date"), resultSet.getLong("city_id"));
             teams.add(team);
-
         }
         statement.close();
         return teams;
