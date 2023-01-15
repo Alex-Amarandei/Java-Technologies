@@ -12,7 +12,7 @@ import java.util.List;
 @Stateless
 @Transactional
 public class DocsRepository implements Serializable {
-    @PersistenceContext(unitName = "lab7PU")
+    @PersistenceContext(unitName = "Lab7PersistenceUnit")
     EntityManager entityManager;
 
     public final List<Docs> getDocs() {
